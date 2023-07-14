@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*Couleur : */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*Global */
+input[type=text] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #FF674D;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  background-color: #7776BC;
+  border: none;
+  font-weight: bold;
+  color: #FFEC51;
+  padding: 10px 60px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+input[type=button]:hover {
+  background-color: #7776BC;
+  border: 1px #000 solid;
+}
+
+/*Extends*/
+.ShadowBox, .SectionActeurs__items1-item .ImageActor, .SectionActeurs__items1-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.BorderSection, .SectionExtraits {
+  border-color: #FFEC51;
+  border-style: solid;
+  border-width: 4px 0;
+}
+
+.Titre, .Titre_h5, .SectionActeurs h5, .Titre_h4, .SectionActeurs h4, .Titre_h2, .SectionActeurs h2, .SectionExtraits h2, .SectionPresentation h2 {
+  font-weight: bold;
+  color: #FF674D;
+}
+
+.Titre_h2, .SectionActeurs h2, .SectionExtraits h2, .SectionPresentation h2 {
+  margin: 0 0 40px 0;
+  font-size: 48px;
+}
+
+.Titre_h4, .SectionActeurs h4 {
+  margin: 20px 0 0 0;
+  font-size: 24px;
+}
+
+.Titre_h5, .SectionActeurs h5 {
+  color: #000;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+
+.Paragraphe, .SectionActeurs p, .SectionExtraits p, .SectionPresentation p {
+  color: #7776BC;
+  margin: 0 0 40px 0;
+  font-size: 18px;
+}
+
+/*Mixins*/
+/*Header*/
+.header__nav {
+  background-color: #FF674D;
+}
+
+/* index.html*/
+/*Section présentation et caroussel */
+.SectionPresentation {
+  margin-top: 40px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #CDC7E5;
+  justify-self: center;
+  justify-content: center;
+}
+.SectionPresentation__LeftPart {
+  align-self: center;
+  margin-right: 30px;
+}
+.SectionPresentation__LeftPart-buttons a {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 20px;
+}
+.SectionPresentation__LeftPart-buttons a:first-child {
+  color: #7776BC;
+  border: 2px solid #FFEC51;
+}
+.SectionPresentation__LeftPart-buttons a:first-child:hover {
+  color: #FFEC51;
+  background-color: #7776BC;
+}
+.SectionPresentation__LeftPart-buttons a:last-child {
+  color: #FFEC51;
+  background-color: #7776BC;
+}
+.SectionPresentation__LeftPart-buttons a:last-child:hover {
+  color: #7776BC;
+  background-color: #FFF;
+  border: 2px solid #FFEC51;
+}
+
+/* Section Images et extraits */
+.SectionExtraits {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  justify-items: center;
+}
+.SectionExtraits__items {
+  margin: 40px 0;
+}
+.SectionExtraits__items p {
+  text-align: center;
+  margin: 10px 0;
+}
+.SectionExtraits__iframe {
+  width: 100%;
+}
+.SectionExtraits__iframe iframe {
+  width: 100%; /*560*/
+  height: 500px; /*315*/
+}
+
+.SectionActeurs {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+.SectionActeurs__items1 {
+  margin: 40px 0;
+}
+.SectionActeurs__items1-item {
+  border-radius: 1%;
+}
+.SectionActeurs__items1-item .ImageActor {
+  width: 100%;
+  border-radius: 5%;
+}
+.SectionActeurs__items1-item div {
+  margin: 0 0 20px 0;
+}
+.SectionActeurs__items1-item div img {
+  width: 80%;
+}
+.SectionActeurs__items2 {
+  margin: 40px 0 0 0;
+}
+.SectionActeurs .itemsForSectionActeurs, .SectionActeurs .SectionActeurs__items1-item, .SectionActeurs .SectionActeurs__items2-item {
+  padding: 20px;
+  background-color: #FFFBDB;
+}
+
+.SectionArticles {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+.SectionArticles__items-img {
+  justify-self: end;
+}
+.SectionArticles__items-p {
+  align-self: center;
+  padding-right: 20px;
+}
+
+/*footer*/
+.footer {
+  background-color: #FF674D;
+  color: #FFF;
+  padding: 0;
+  margin-top: 20px;
+}
+.footer__part1 {
+  padding: 20px 10px;
+  border-bottom: 2px solid #FFEC51;
+}
+.footer__part1-rs img {
+  width: 50%;
+}
+.footer__part2 {
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-color: #FFEC51;
+  }
+}
+/* 1280 et 768*//*# sourceMappingURL=style.css.map */

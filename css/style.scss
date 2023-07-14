@@ -1,0 +1,279 @@
+
+
+/*Couleur : */
+$Maize : #FFEC51;
+$Tomato : #FF674D;
+$LightYellow : #FFFBDB;
+$Priwinkle : #CDC7E5;
+$Glaucous : #7776BC;
+$White : #FFF;
+$Black : #000;
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Global */
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $Tomato;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=button] {
+    background-color: $Glaucous;
+    border: none;
+    font-weight: bold;
+    color: $Maize;
+    padding: 10px 60px;
+    text-decoration: none;
+    margin: 4px 2px;
+    &:hover{
+        background-color: $Glaucous;
+        border: 1px $Black solid;
+    }
+
+}
+
+
+/*Extends*/
+.ShadowBox{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.BorderSection{
+    border-color: $Maize;
+    border-style: solid;
+    border-width: 4px 0;
+}
+.Titre{
+    font-weight: bold;
+    color: $Tomato;
+}
+.Titre_h2{
+    @extend .Titre;
+    margin: 0 0 40px 0;
+    font-size: 48px;
+}
+.Titre_h4{
+    @extend .Titre;
+    margin: 20px 0 0 0;
+    font-size: 24px;
+}
+.Titre_h5{
+    @extend .Titre;
+    color: $Black;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+.Paragraphe{
+    color: $Glaucous;
+    margin: 0 0 40px 0;
+    font-size: 18px;
+}
+
+/*Mixins*/
+@mixin Nouvelle_section($mt, $mr, $mb, $ml, $pt, $pr, $pb, $pl){
+
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+
+/*Header*/
+.header{
+    &__nav{
+        background-color: $Tomato;
+    }
+}
+
+/* index.html*/
+
+/*Section présentation et caroussel */
+
+.SectionPresentation{
+    @include Nouvelle_section(40px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    background-color: $Priwinkle;
+    justify-self: center;
+    justify-content: center;
+    h2{
+        @extend .Titre_h2;
+    }
+    p{
+        @extend .Paragraphe;
+    }
+    &__LeftPart{
+        align-self: center;
+        margin-right: 30px;
+        &-buttons{
+            a{
+                font-weight: bold;
+                text-align: center;
+                padding: 10px 20px;
+                margin: 0 20px;
+                &:first-child{
+                    color: $Glaucous;
+                    border: 2px solid $Maize;
+                    &:hover{
+                        color: $Maize;
+                        background-color: $Glaucous;
+                    }
+                }
+                &:last-child{
+                    color: $Maize;
+                    background-color: $Glaucous;
+                    &:hover{
+                        color: $Glaucous;
+                        background-color: $White;
+                        border: 2px solid $Maize;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Section Images et extraits */
+
+.SectionExtraits{
+    @include Nouvelle_section(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    @extend .BorderSection;
+    justify-items: center;
+    h2{
+        @extend .Titre_h2;
+    }
+    p{
+        @extend .Paragraphe;
+    }
+    &__items{
+        margin: 40px 0;
+        p{
+            text-align: center;
+            margin: 10px 0;
+        }
+    }
+    &__iframe{
+        width: 100%;
+
+        iframe{
+            width: 100%; /*560*/
+            height: 500px; /*315*/
+        }
+    }
+}
+.SectionActeurs{
+    @include Nouvelle_section(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    h2{
+        @extend .Titre_h2;
+    }
+    h4{
+        @extend .Titre_h4;
+    }
+    h5{
+        @extend .Titre_h5;
+    }
+    p{
+        @extend .Paragraphe;
+    }
+    &__items1{
+        margin: 40px 0;
+        &-item{
+            @extend .itemsForSectionActeurs;
+            @extend .ShadowBox;
+            border-radius: 1%;
+            .ImageActor{
+                width: 100%;
+                @extend .ShadowBox;
+                border-radius: 5%;
+            }
+            div{
+                margin: 0 0 20px 0;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    &__items2{ 
+        margin: 40px 0 0 0;
+        &-item{
+            @extend .itemsForSectionActeurs;
+            
+        }
+    }
+    .itemsForSectionActeurs{
+        padding: 20px;
+        background-color: $LightYellow;
+    }
+}
+
+.SectionArticles{
+    @include Nouvelle_section(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    &__items{
+        &-img{
+            justify-self: end;
+        }
+        &-p{
+            align-self: center;
+            padding-right: 20px;
+        }
+    }
+}
+
+
+/*footer*/
+.footer{
+    background-color: $Tomato;
+    color: $White;
+    padding: 0;
+    margin-top: 20px;
+    &__part1{
+        padding: 20px 10px;
+        border-bottom: 2px solid $Maize;
+        &-rs{
+            img{
+                width: 50%;
+            }
+        }
+    }
+    &__part2{
+        padding: 20px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+   body{
+    background-color: #FFEC51;
+   }
+
+}
+
+
+/* 1280 et 768*/
+@media screen and (max-width: 570px) {
+
+}
