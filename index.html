@@ -6,59 +6,60 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <script type="text/javascript" src="js/slider.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>TP2 - Imane Sbiti et abdelhamid Benallou</title>
 </head>
-<body>          
+<body>      
+
+    <header class="col-span-12 header">
+            <nav class="header__nav">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html.com/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Jumanji" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0">
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-black" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+    </header>
 
     <main class="grid grid-cols-12">
-        <header class="col-span-12 md:col-span-12 bg-red-500 header">
-
-
-                <nav class="header__nav">
-                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="index.html.com/" class="flex items-center">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Jumanji" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                    </a>
-                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0">
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-black" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
-                </nav>
-
-        </header>
-
         <section class="col-span-12 grid grid-cols-12 SectionPresentation">
-            <div class="col-span-6 SectionPresentation__LeftPart content-center justify-self-center">
+
+            <article class="col-span-6 SectionPresentation__LeftPart">
                     <h2>Présentationn de l'Oeuvre</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non quae aliquam.</p>
                     <div class="grid grid-cols-2 SectionPresentation__LeftPart-buttons">
                         <a href="#">Select quantity</a>
                         <a href="#">+ buy now</a>
                     </div>
-            </div>
-            <div class="col-span-6">
-                
+            </article>
+
+            <article class="col-span-6">
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
@@ -96,10 +97,8 @@
                         </span>
                     </button>
                 </div>
-
-            </div>
+            </article>
         </section>
-
 
         <section class="col-span-12 grid grid-cols-12 SectionExtraits">
             <h2 class="col-span-12">Images et extraits</h2>
@@ -123,167 +122,139 @@
                     <p>Ici text</p>
                 </div>
             </div>
-
-            <iframe class="col-start-3 col-span-8" width="560" height="315" src="https://www.youtube.com/embed/35gDZKz9hag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+            <div class="col-start-3 col-span-8 SectionExtraits__iframe">
+                    <iframe src="https://www.youtube.com/embed/35gDZKz9hag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section class="col-span-12 SectionActeurs">
             <h2>Présentation des acteurs</h2>
             <p>Lorem lorem loreeeeeeeeeeeeeem</p>
 
-            <div class="grid grid-cols-4 gap-6 my-8">
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div> 
+            <article class="grid grid-cols-4 gap-6 SectionActeurs__items1">
+                <div class="SectionActeurs__items1-item">
+                        <img class="ImageActor" src="Images/Single.jpg" alt="">
                         <h4>Imane Sbiti</h4>
                         <h5> ici un text kima kan</h5>
                         <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+                        <div class="grid grid-cols-6">
+                            <img src="Images/facebook.png" alt="">
+                            <img src="Images/instagram.png" alt="">
+                            <img src="Images/twitter.png" alt="">
+                        </div>
+                </div>
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
-                    </div>
-                </div>
-            </div>
+            </article>
 
-            <div class="grid grid-cols-4 gap-6 mt-20">
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+            <article class="grid grid-cols-4 gap-6 SectionActeurs__items2">
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-                <div class="px-8">
-                    <div class="max-w-lg h-auto">
-                        <img class="max-w-lg h-auto rounded-lg shadow-xl w-full" src="Images/Single.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Imane Sbiti</h4>
-                        <h5> ici un text kima kan</h5>
-                        <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    </div>
-                    <div class="grid grid-cols-6 mt-4">
-                        <img class="w-4/5" src="Images/facebook.png" alt="">
-                        <img class="w-4/5" src="Images/instagram.png" alt="">
-                        <img class="w-4/5" src="Images/twitter.png" alt="">
+                <div class="SectionActeurs__items1-item">
+                    <img class="ImageActor" src="Images/Single.jpg" alt="">
+                    <h4>Imane Sbiti</h4>
+                    <h5> ici un text kima kan</h5>
+                    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                    <div class="grid grid-cols-6">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/twitter.png" alt="">
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section class="col-span-12 grid grid-cols-12 SectionArticles">
-            <div class="col-span-12 grid grid-cols-12 gap-10">
-                    <div class="col-span-6 justify-self-end">
+            
+            <article class="col-span-12 grid grid-cols-12 gap-10 SectionArticles__items">
+                    <div class="col-span-6 SectionArticles__items-img">
                         <img src="Images/Image22.jpg" alt="">
                     </div>
-                    <div class="col-span-4 self-center pr-20">
+                    <div class="col-span-4 SectionArticles__items-p">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
                     </div>
-            </div>
-            <div class="col-span-12 grid grid-cols-12 gap-10 my-10">
-                <div class=" col-start-3 col-span-4 self-center pr-20">
+            </article>
+
+            <article class="col-span-12 grid grid-cols-12 gap-10 my-10">
+                <div class=" col-start-3 col-span-4 SectionArticles__items-p">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
                 </div>
                 <div class="col-start-7 col-span-6">
                     <img src="Images/Image22.jpg" alt="">
                 </div>
-            </div>
-            <div class="col-span-12 grid grid-cols-12 gap-10">
-                <div class="col-span-6 justify-self-end">
+            </article>
+
+            <article class="col-span-12 grid grid-cols-12 gap-10 SectionArticles__items">
+                <div class="col-span-6 SectionArticles__items-img">
                     <img src="Images/Image22.jpg" alt="">
                 </div>
-                <div class="col-span-4 self-center pr-20">
+                <div class="col-span-4 SectionArticles__items-p">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
                 </div>
-            </div>
+            </article>
+
         </section>
     </main>
 
