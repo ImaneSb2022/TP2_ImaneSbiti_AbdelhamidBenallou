@@ -213,9 +213,25 @@ input[type=button]:hover {
   padding: 20px 10px;
 }
 
-@media screen and (max-width: 1280px) {
+/* Largeur de l'écran >=1280px  */
+@media screen and (min-width: 1281px) {
   body {
-    background-color: #FFEC51;
+    background-color: rgba(243, 0, 0, 0.9921568627);
   }
 }
-/* 1280 et 768*//*# sourceMappingURL=style.css.map */
+/* 1280px > Largeur de l'écran >=768px  */
+@media screen and (max-width: 1280px) and (min-width: 769px) {
+  body {
+    background-color: #00fe61;
+  }
+  .SectionExtraits____iframe iframe {
+    width: 100%;
+    height: 100px;
+  }
+}
+/* 768px > Largeur de l'écran  */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: rgb(255, 0, 255);
+  }
+}/*# sourceMappingURL=style.css.map */
