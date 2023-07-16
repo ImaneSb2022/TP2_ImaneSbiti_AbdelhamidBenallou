@@ -13,7 +13,9 @@ body{
     font-family: 'Lato', sans-serif;
 }
 /*Global */
-
+.cache{
+    visibility:hidden;
+}
 input[type=text] {
     width: 100%;
     padding: 10px 20px;
@@ -163,6 +165,15 @@ input[type=button] {
             margin: 10px 0;
         }
     }
+    &__form{
+        &-button{
+            margin: 0;
+            align-self: center;
+            input[type=button]{
+                width: 100%;
+            }
+        }
+    }
     &__iframe{
         width: 100%;
 
@@ -223,51 +234,26 @@ input[type=button] {
     &__items{
         &-img{
             justify-self: end;
+            margin: 20px 0;
         }
         &-p{
             align-self: center;
-            padding-right: 20px;
-        }
-    }
-}
-
-/* page tourage */
-
-.SectionFaitsDivers{
-    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
-    background-color: $LightYellow;
-
-    &__LeftPart{
-        order: 1;
-        &-img{
-            width: 100%;
-            img{
-                @extend .ShadowBox
+            justify-self: center;
+            p{
+                margin: 0;
+                width: 100%;
+            }
+            .middleArticleP{
+                padding-left: 30%;
+                
             }
         }
     }
-    
-    &__RightPart{
-        order: 2;
-        align-self: center;
-        margin-left: 40px;
-        h2{
-            @extend .Titre_h2;
-        }
-        h4{
-            @extend .Titre_h4;
-        }
-        h5{
-            @extend .Titre_h5;
-        }
-        p{
-            @extend .Paragraphe;
-        }
-        .FaitsDivers__button{
-            margin-top: 40px;
-        }
-    }
 }
+
+
+
+
 
 /*footer*/
 .footer{
@@ -290,14 +276,14 @@ input[type=button] {
 }
 
 
-/*page tournage */
+/* page tourage */
 
-/*Faits divers*/
 .SectionFaitsDivers{
     @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     background-color: $LightYellow;
 
     &__LeftPart{
+        order: 1;
         &-img{
             width: 100%;
             img{
@@ -307,6 +293,7 @@ input[type=button] {
     }
     
     &__RightPart{
+        order: 2;
         align-self: center;
         margin-left: 40px;
         h2{
@@ -378,7 +365,7 @@ input[type=button] {
             border: none;
         }
         span{
-             font-size: 18px;
+            font-size: 18px;
         color: $Black;
         border: none;
         }
@@ -392,71 +379,212 @@ input[type=button] {
         background-color: $Priwinkle;
         margin-bottom: 10px;
     }
-   
-}
 
 }
 
+}
 
 
+/************************************************/
+
+/**************     RESPONSIVE    ***************/
+
+/************************************************/
+
+
+
+/****    INDEX   ****/
+
+@media (max-width: 1536px) and (min-width: 1280px){
+    .body{
+        background-color: red;
+    }
+
+}
 
 
 /* 1280px > Largeur de l'écran >=768px  */
-@media screen and (max-width: 1280px) and (min-width: 769px) {
+@media (max-width: 1279px) and (min-width: 769px) {
 
-    body{
-        background-color: #00fe61;
-    }
-
-    .SectionExtraits{
-        &____iframe{
-            iframe{
-                width: 100%;
-                height: 100px;
+        body{
+            background-color: #9a2eff;
+        }
+        .SectionExtraits{
+            @include container(20px, 20px, 0, 20px, 20px, 20px, 0, 20px);
+            h2{
+                margin-bottom: 10px;
+            }
+            &__iframe{
+                    iframe{
+                        
+                        height: auto;
+                    }
             }
         }
-    }
-    
+        .SectionActeurs{
+            @include container(20px, 20px, 20px, 20px, 0, 20px, 0, 20px);
+            h2{
+                margin-bottom: 10px;
+            }
+            
+        }
+        .SectionArticles{
+            @include container(20px, 20px, 20px, 20px, 0, 20px, 0, 20px);
+            &__items{
+                &-p{
+                    .middleArticleP{
+                        padding-left: 20%;
+                        
+                    }
+                }
+            }
+
+        }
+
 }
+
+
+
+
 
 /* 768px > Largeur de l'écran  */
-@media screen and (max-width: 768px) {
-    body{
-        background-color: rgb(255, 0, 255);
-    }
+@media (max-width: 768px) and (min-width: 500px){
+        body{
+            background-color: rgb(255, 191, 255);
+        }
+
+    /*Présentation de l'oeuvre*/
+
+        .SectionPresentation{
+            @include container(20px, 20px, 20px, 20px, 20px, 20px, 20px, 20px);
+            h2{
+                @extend .Titre_h2;
+                margin-bottom: 10px;
+            }
+            &__LeftPart{
+                &-buttons{
+                    margin: 0 0 40px 0;
+                    }
+                }
+            }
+        
+    /* Section Images et extraits */
+
+        .SectionExtraits{
+            @include container(20px, 20px, 20px, 20px, 20px, 20px, 0, 20px);
+            h2{
+                @extend .Titre_h2;
+                margin-bottom: 10px;
+            }
+            p{
+                @extend .Paragraphe;
+            }
+            &__items{
+                margin: 40px 0;
+                p{
+                    text-align: center;
+                    margin: 10px 0;
+                }
+            }
+            &__iframe{
+                display: none;
+            }
+        }
+
+        /*Section acteurs */
+
+        .SectionActeurs{
+            @include container(0, 20px, 20px, 20px, 0, 20px, 0, 20px);
+            h2{
+                margin-bottom:10px;
+            }
+            p{
+                margin-bottom:10px;
+            }
+        }
+
+        /* Section  Articles */
+        .SectionArticles{
+            @include container(0, 20px, 20px, 20px, 0, 20px, 0, 20px);
+
+            &__items{
+                text-align: -webkit-center;
+                &-img{
+                    margin: 0 0 40px 0;
+                    padding: 0;
+                    justify-self: center;
+                }
+                &-p{
+                    margin: 0 0 40px 0;
+                    padding: 0;
+                    
+                }
+                .smReverseImg{
+                    order: 2;
+                    
+                }
+                .smReverseP{
+                    order: 1;
+                        justify-self: center;
+                        padding: 0;
+                }
+                .middleArticleP{
+                    margin: 0 0 40px 0;
+                    padding: 0;
+                }
+                .middleArticleImg{
+                    text-align: center;
+                    justify-self: center;
+                    margin: 0 0 40px 0;
+                    padding: 0;
+                }
+            }
+        }
+
 }
 
 
-/* Responsive Page tournage*/
+
+
+@media (max-width: 600px) and (min-width: 500px){
+    
+    /*Présentation de l'oeuvre*/
+
+    .SectionPresentation{
+            &__RightPart{
+                visibility: hidden;
+            }
+    }
+}
+
+/****    TOURNAGE   ****/
 
 @media (max-width: 1024px) and (min-width: 500px){
     /* page tourage */
 
-.SectionFaitsDivers{
-    @include container(20px, 20px, 20px, 20px, 10px, 10px, 10px, 10px);
-
-
-    &__LeftPart{
-        order: 2;
-        &-img{
-            width: 100%;
-            text-align: -webkit-center;
-            margin: 40px 0;
+        .SectionFaitsDivers{
+                @include container(20px, 20px, 20px, 20px, 10px, 10px, 10px, 10px);
+                        &__LeftPart{
+                            order: 2;
+                            &-img{
+                                width: 100%;
+                                text-align: -webkit-center;
+                                margin: 40px 0;
+                            }
+                        }
+                    
+                        &__RightPart{
+                            order: 1;
+                            padding: 0;
+                            margin: 0;
+                            width: 50%;
+                            place-self: center;
+                            h2{
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                margin: 10px 0;
+                            }
+                        }
         }
-    }
-    
-    &__RightPart{
-        order: 1;
-        padding: 0;
-        margin: 0;
-        width: 50%;
-        place-self: center;
-        h2{
-            margin-bottom: 10px;
-        }
-        p{
-            margin: 10px 0;
-        }
-    }
-}
 }

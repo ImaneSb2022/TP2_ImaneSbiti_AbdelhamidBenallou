@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
     <script type="text/javascript" src="js/slider.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <title>TP2 - Imane Sbiti et abdelhamid Benallou</title>
 </head>
 <body>      
 
     <header class="col-span-12 header">
+
+
             <nav class="header__nav">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="index.html" class="flex items-center">
+                <a href="index.html" class="flex items-center" tabindex="1">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Jumanji" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" tabindex="1">Flowbite</span>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -45,12 +52,15 @@
                 </div>
                 </div>
             </nav>
+
+
+            
     </header>
 
     <main class="grid grid-cols-12">
-        <section class="col-span-12 grid grid-cols-12 SectionPresentation">
+        <section class="col-span-12 grid grid-cols-2 SectionPresentation">
 
-            <article class="col-span-6 SectionPresentation__LeftPart">
+            <article class="xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 SectionPresentation__LeftPart">
                     <h2>Présentationn de l'Oeuvre</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non quae aliquam.</p>
                     <div class="grid grid-cols-2 SectionPresentation__LeftPart-buttons">
@@ -59,7 +69,7 @@
                     </div>
             </article>
 
-            <article class="col-span-6">
+            <article class="xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 SectionPresentation__RightPart">
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
@@ -84,16 +94,16 @@
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2" tabindex="13"></button>
                     </div>
                     <!-- Slider controls -->
-                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev  tabindex="9">
                         <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                             <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                            <span class="hidden" tabindex="9">Previous</span>
+                            <span class="hidden">Previous</span>
                         </span>
                     </button>
-                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next  tabindex="10">
                         <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                             <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            <span class="hidden" tabindex="10">Next</span>
+                            <span class="hidden">Next</span>
                         </span>
                     </button>
                 </div>
@@ -103,28 +113,35 @@
         <section class="col-span-12 grid grid-cols-12 SectionExtraits">
             <h2 class="col-span-12">Images et extraits</h2>
             <p class="col-span-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <div class="col-span-12 grid grid-cols-12 gap-2">
-                <label for="Newsletter"></label>
-                <input class="col-start-5 col-span-2" type="text" value="Newsletter ici" tabindex="14">
-                <label for="valider"></label>
-                <input class="col-span-2" type="button" value="valider" tabindex="15">
+            <div class="col-span-12 grid grid-cols-2 gap-2 SectionExtraits__form">
+                <div class="col-span-1 SectionExtraits__form-text">
+                        <label for="Newsletter"  class="cache"></label>
+                        <input type="text" id="Newsletter" value="Newsletter ici" tabindex="14">
+                </div>
+                <div class="col-span-1 SectionExtraits__form-button">
+                        <label for="valider" class="cache"></label>
+                        <input id="valider" type="button" value="valider" tabindex="15">
+                </div>
             </div>
 
-            <div class="col-span-12  grid grid-cols-6 gap-4 SectionExtraits__items">
-                <div class="xl:col-span-2 lg:col-span-3 md:col-span-3">
+            <div class="col-span-12 grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 SectionExtraits__items">
+                <div>
                     <img src="Images/Image.jpg" alt="">
                     <p>Ici text</p>
                 </div>
-                <div class="xl:col-span-2 lg:col-span-3 md:col-span-3">
+                <div>
                     <img src="Images/Image.jpg" alt="">
                     <p>Ici text</p>
                 </div>
-                <div class="xl:col-span-2 lg:col-span-3 md:col-span-3">
+                <div>
                     <img src="Images/Image.jpg" alt="">
                     <p>Ici text</p>
                 </div>
-                <div class="xl:col-span-4 xl:col-start-2 lg:col-span-3 SectionExtraits__iframe">
-                    <iframe src="https://www.youtube.com/embed/35gDZKz9hag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen tabindex="16"></iframe>
+
+                <div class="2xl:col-span-3 xl:col-span-3 SectionExtraits__iframe">
+
+                    <iframe src="https://www.youtube.com/embed/35gDZKz9hag" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen tabindex="16"></iframe>
+
                 </div>
             </div>
 
@@ -134,7 +151,8 @@
             <h2>Présentation des acteurs</h2>
             <p>Lorem lorem loreeeeeeeeeeeeeem</p>
 
-            <article class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 gap-6 SectionActeurs__items1">
+            <article class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6 SectionActeurs__items1">
+
                 <div class="SectionActeurs__items1-item">
                         <img class="ImageActor" src="Images/Single.jpg" alt="">
                         <h4>Imane Sbiti</h4>
@@ -226,34 +244,34 @@
             </article>
         </section>
 
-        <section class="col-span-12 grid grid-cols-12 SectionArticles">
+        <section class="col-span-12 SectionArticles">
 
-            <article class="col-span-12 grid grid-cols-12 gap-10 SectionArticles__items">
-                    <div class="col-span-6 SectionArticles__items-img">
+            <article class=" grid sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 xl:gap-20 lg:gap-20 md:gap-20 sm:gap-0 SectionArticles__items">
+                    <div class="SectionArticles__items-img smReverseImg">
                         <img src="Images/Image22.jpg" alt="">
                     </div>
-                    <div class="col-span-4 SectionArticles__items-p">
+                    <div class="SectionArticles__items-p smReverseP">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
                     </div>
             </article>
 
-            <article class="col-span-12 grid grid-cols-12 gap-10 my-10">
-                <div class=" col-start-3 col-span-4 SectionArticles__items-p">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
+            <article class=" grid sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 xl:gap-20 lg:gap-20 md:gap-20 sm:gap-0 SectionArticles__items">
+                <div class="SectionArticles__items-p">
+                    <p class="middleArticleP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
                 </div>
-                <div class="col-start-7 col-span-6">
+                <div class="middleArticleImg">
                     <img src="Images/Image22.jpg" alt="">
                 </div>
             </article>
 
-            <article class="col-span-12 grid grid-cols-12 gap-10 SectionArticles__items">
-                <div class="col-span-6 SectionArticles__items-img">
+            <article class=" grid sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 xl:gap-20 lg:gap-20 md:gap-20 sm:gap-0 SectionArticles__items">
+                <div class="SectionArticles__items-img smReverseImg">
                     <img src="Images/Image22.jpg" alt="">
                 </div>
-                <div class="col-span-4 SectionArticles__items-p">
+                <div class="SectionArticles__items-p smReverseP">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quod excepturi id doloremque esse, eveniet provident tenetur at, laborum possimus repellendus eaque. Quo incidunt quam aliquid officiis voluptatem voluptas atque.</p>
                 </div>
-            </article>
+        </article>
 
         </section>
     </main>
@@ -280,19 +298,6 @@
             <p>Cégep de Trois-Rivières</p>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
