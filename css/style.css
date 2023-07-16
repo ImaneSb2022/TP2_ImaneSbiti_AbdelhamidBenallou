@@ -30,7 +30,7 @@ input[type=button]:hover {
 }
 
 /*Extends*/
-.ShadowBox, .SectionFaitsDivers__LeftPart-img img, .SectionActeurs__items1-item .ImageActor, .SectionActeurs__items1-item {
+.ShadowBox, .SectionGallerie__items-img img, .SectionFaitsDivers__LeftPart-img img, .SectionActeurs__items1-item .ImageActor, .SectionActeurs__items1-item {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -207,10 +207,14 @@ input[type=button]:hover {
   padding-left: 40px;
   background-color: #FFFBDB;
 }
+.SectionFaitsDivers__LeftPart {
+  order: 1;
+}
 .SectionFaitsDivers__LeftPart-img {
   width: 100%;
 }
 .SectionFaitsDivers__RightPart {
+  order: 2;
   align-self: center;
   margin-left: 40px;
 }
@@ -236,6 +240,30 @@ input[type=button]:hover {
   padding: 20px 10px;
 }
 
+/*page tournage */
+/*Faits divers*/
+.SectionFaitsDivers {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #FFFBDB;
+}
+.SectionFaitsDivers__LeftPart-img {
+  width: 100%;
+}
+.SectionFaitsDivers__RightPart {
+  align-self: center;
+  margin-left: 40px;
+}
+.SectionFaitsDivers__RightPart .FaitsDivers__button {
+  margin-top: 40px;
+}
+
 /* Gallerie  */
 .SectionGallerie {
   margin-top: 20px;
@@ -246,8 +274,11 @@ input[type=button]:hover {
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
+  text-align: -webkit-center;
 }
-
+.SectionGallerie__items-img {
+  width: 100%;
+}
 /*  Accordéon  */
 .SectionAccordeon {
   margin-top: 20px;
@@ -292,3 +323,38 @@ input[type=button]:hover {
   }
 }
 /* 1280 et 768*/
+/* Responsive Page tournage*/
+@media (max-width: 1024px) {
+  /* page tourage */
+  .SectionFaitsDivers {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .SectionFaitsDivers__LeftPart {
+    order: 2;
+  }
+  .SectionFaitsDivers__LeftPart-img {
+    width: 100%;
+    text-align: -webkit-center;
+    margin: 40px 0;
+  }
+  .SectionFaitsDivers__RightPart {
+    order: 1;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    place-self: center;
+  }
+  .SectionFaitsDivers__RightPart h2 {
+    margin-bottom: 10px;
+  }
+  .SectionFaitsDivers__RightPart p {
+    margin: 10px 0;
+  }
+}

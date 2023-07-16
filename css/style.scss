@@ -236,7 +236,9 @@ input[type=button] {
 .SectionFaitsDivers{
     @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     background-color: $LightYellow;
+
     &__LeftPart{
+        order: 1;
         &-img{
             width: 100%;
             img{
@@ -246,6 +248,7 @@ input[type=button] {
     }
     
     &__RightPart{
+        order: 2;
         align-self: center;
         margin-left: 40px;
         h2{
@@ -287,13 +290,57 @@ input[type=button] {
 }
 
 
+/*page tournage */
+
+/*Faits divers*/
+.SectionFaitsDivers{
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    background-color: $LightYellow;
+
+    &__LeftPart{
+        &-img{
+            width: 100%;
+            img{
+                @extend .ShadowBox
+            }
+        }
+    }
+    
+    &__RightPart{
+        align-self: center;
+        margin-left: 40px;
+        h2{
+            @extend .Titre_h2;
+        }
+        h4{
+            @extend .Titre_h4;
+        }
+        h5{
+            @extend .Titre_h5;
+        }
+        p{
+            @extend .Paragraphe;
+        }
+        .FaitsDivers__button{
+            margin-top: 40px;
+        }
+    }
+}
 
 /* Gallerie  */
 
 .SectionGallerie{
     @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     @extend .BorderSection;
-    
+    text-align: -webkit-center;
+    &__items{
+        &-img{
+            width: 100%;
+            img{
+                @extend .ShadowBox;
+            }
+        }
+    }
 
 }
 
@@ -366,4 +413,39 @@ input[type=button] {
 /* 1280 et 768*/
 @media screen and (max-width: 570px) {
 
+}
+
+
+/* Responsive Page tournage*/
+
+@media (max-width: 1024px) {
+    /* page tourage */
+
+.SectionFaitsDivers{
+    @include container(20px, 20px, 20px, 20px, 10px, 10px, 10px, 10px);
+
+
+    &__LeftPart{
+        order: 2;
+        &-img{
+            width: 100%;
+            text-align: -webkit-center;
+            margin: 40px 0;
+        }
+    }
+    
+    &__RightPart{
+        order: 1;
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        place-self: center;
+        h2{
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 10px 0;
+        }
+    }
+}
 }
