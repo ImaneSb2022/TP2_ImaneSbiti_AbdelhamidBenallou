@@ -429,7 +429,7 @@ input[type=button] {
 
 /* Responsive Page tournage*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 500px){
     /* page tourage */
 
 .SectionFaitsDivers{
