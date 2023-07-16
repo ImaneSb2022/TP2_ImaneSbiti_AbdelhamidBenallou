@@ -30,38 +30,38 @@ input[type=button]:hover {
 }
 
 /*Extends*/
-.ShadowBox, .SectionActeurs__items1-item .ImageActor, .SectionActeurs__items1-item {
+.ShadowBox, .SectionGallerie__items-img img, .SectionFaitsDivers__LeftPart-img img, .SectionActeurs__items1-item .ImageActor, .SectionActeurs__items1-item {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.BorderSection, .SectionExtraits {
+.BorderSection, .SectionGallerie, .SectionExtraits {
   border-color: #FFEC51;
   border-style: solid;
   border-width: 4px 0;
 }
 
-.Titre, .Titre_h5, .SectionActeurs h5, .Titre_h4, .SectionActeurs h4, .Titre_h2, .SectionActeurs h2, .SectionExtraits h2, .SectionPresentation h2 {
+.Titre, .Titre_h5, .SectionFaitsDivers__RightPart h5, .SectionActeurs h5, .Titre_h4, .SectionFaitsDivers__RightPart h4, .SectionActeurs h4, .Titre_h2, .SectionAccordeon h2, .SectionFaitsDivers__RightPart h2, .SectionActeurs h2, .SectionExtraits h2, .SectionPresentation h2 {
   font-weight: bold;
   color: #FF674D;
 }
 
-.Titre_h2, .SectionActeurs h2, .SectionExtraits h2, .SectionPresentation h2 {
+.Titre_h2, .SectionAccordeon h2, .SectionFaitsDivers__RightPart h2, .SectionActeurs h2, .SectionExtraits h2, .SectionPresentation h2 {
   margin: 0 0 40px 0;
   font-size: 48px;
 }
 
-.Titre_h4, .SectionActeurs h4 {
+.Titre_h4, .SectionFaitsDivers__RightPart h4, .SectionActeurs h4 {
   margin: 20px 0 0 0;
   font-size: 24px;
 }
 
-.Titre_h5, .SectionActeurs h5 {
+.Titre_h5, .SectionFaitsDivers__RightPart h5, .SectionActeurs h5 {
   color: #000;
   margin: 0 0 20px 0;
   font-size: 18px;
 }
 
-.Paragraphe, .SectionActeurs p, .SectionExtraits p, .SectionPresentation p {
+.Paragraphe, .SectionAccordeon__p p, .SectionFaitsDivers__RightPart p, .SectionActeurs p, .SectionExtraits p, .SectionPresentation p {
   color: #7776BC;
   margin: 0 0 40px 0;
   font-size: 18px;
@@ -195,6 +195,33 @@ input[type=button]:hover {
   padding-right: 20px;
 }
 
+/* page tourage */
+.SectionFaitsDivers {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #FFFBDB;
+}
+.SectionFaitsDivers__LeftPart {
+  order: 1;
+}
+.SectionFaitsDivers__LeftPart-img {
+  width: 100%;
+}
+.SectionFaitsDivers__RightPart {
+  order: 2;
+  align-self: center;
+  margin-left: 40px;
+}
+.SectionFaitsDivers__RightPart .FaitsDivers__button {
+  margin-top: 40px;
+}
+
 /*footer*/
 .footer {
   background-color: #FF674D;
@@ -213,12 +240,83 @@ input[type=button]:hover {
   padding: 20px 10px;
 }
 
-/* Largeur de l'écran >=1280px  */
-@media screen and (min-width: 1281px) {
-  body {
-    background-color: rgba(243, 0, 0, 0.9921568627);
-  }
+/*page tournage */
+/*Faits divers*/
+.SectionFaitsDivers {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #FFFBDB;
 }
+.SectionFaitsDivers__LeftPart-img {
+  width: 100%;
+}
+.SectionFaitsDivers__RightPart {
+  align-self: center;
+  margin-left: 40px;
+}
+.SectionFaitsDivers__RightPart .FaitsDivers__button {
+  margin-top: 40px;
+}
+
+/* Gallerie  */
+.SectionGallerie {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  text-align: -webkit-center;
+}
+.SectionGallerie__items-img {
+  width: 100%;
+}
+/*  Accordéon  */
+.SectionAccordeon {
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  text-align: -webkit-center;
+}
+.SectionAccordeon h2 {
+  text-align: center;
+}
+.SectionAccordeon__p {
+  width: 60%;
+}
+.SectionAccordeon__p p {
+  text-align: center;
+}
+.SectionAccordeon #accordion-collapse-heading-1, .SectionAccordeon #accordion-collapse-heading-2, .SectionAccordeon #accordion-collapse-heading-3, .SectionAccordeon #accordion-collapse-heading-4, .SectionAccordeon #accordion-collapse-heading-5, .SectionAccordeon #accordion-collapse-heading-6 {
+  margin: 20px 0 0 0;
+}
+.SectionAccordeon #accordion-collapse-heading-1 button, .SectionAccordeon #accordion-collapse-heading-2 button, .SectionAccordeon #accordion-collapse-heading-3 button, .SectionAccordeon #accordion-collapse-heading-4 button, .SectionAccordeon #accordion-collapse-heading-5 button, .SectionAccordeon #accordion-collapse-heading-6 button {
+  background-color: #FFEC51;
+  border: none;
+}
+.SectionAccordeon #accordion-collapse-heading-1 span, .SectionAccordeon #accordion-collapse-heading-2 span, .SectionAccordeon #accordion-collapse-heading-3 span, .SectionAccordeon #accordion-collapse-heading-4 span, .SectionAccordeon #accordion-collapse-heading-5 span, .SectionAccordeon #accordion-collapse-heading-6 span {
+  font-size: 18px;
+  color: #000;
+  border: none;
+}
+.SectionAccordeon #accordion-collapse-body-1, .SectionAccordeon #accordion-collapse-body-2, .SectionAccordeon #accordion-collapse-body-3, .SectionAccordeon #accordion-collapse-body-4, .SectionAccordeon #accordion-collapse-body-5, .SectionAccordeon #accordion-collapse-body-6 {
+  background-color: #CDC7E5;
+  margin-bottom: 10px;
+}
+
 /* 1280px > Largeur de l'écran >=768px  */
 @media screen and (max-width: 1280px) and (min-width: 769px) {
   body {
@@ -233,5 +331,40 @@ input[type=button]:hover {
 @media screen and (max-width: 768px) {
   body {
     background-color: rgb(255, 0, 255);
+  }
+}
+/* Responsive Page tournage*/
+@media (max-width: 1024px) {
+  /* page tourage */
+  .SectionFaitsDivers {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .SectionFaitsDivers__LeftPart {
+    order: 2;
+  }
+  .SectionFaitsDivers__LeftPart-img {
+    width: 100%;
+    text-align: -webkit-center;
+    margin: 40px 0;
+  }
+  .SectionFaitsDivers__RightPart {
+    order: 1;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    place-self: center;
+  }
+  .SectionFaitsDivers__RightPart h2 {
+    margin-bottom: 10px;
+  }
+  .SectionFaitsDivers__RightPart p {
+    margin: 10px 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -76,7 +76,7 @@ input[type=button] {
 }
 
 /*Mixins*/
-@mixin Nouvelle_section($mt, $mr, $mb, $ml, $pt, $pr, $pb, $pl){
+@mixin container($mt, $mr, $mb, $ml, $pt, $pr, $pb, $pl){
 
     margin-top: $mt;
     margin-right: $mr;
@@ -102,7 +102,7 @@ input[type=button] {
 /*Section présentation et caroussel */
 
 .SectionPresentation{
-    @include Nouvelle_section(40px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    @include container(40px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     background-color: $Priwinkle;
     justify-self: center;
     justify-content: center;
@@ -147,7 +147,7 @@ input[type=button] {
 /* Section Images et extraits */
 
 .SectionExtraits{
-    @include Nouvelle_section(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     @extend .BorderSection;
     justify-items: center;
     h2{
@@ -173,7 +173,7 @@ input[type=button] {
     }
 }
 .SectionActeurs{
-    @include Nouvelle_section(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     h2{
         @extend .Titre_h2;
     }
@@ -219,7 +219,7 @@ input[type=button] {
 }
 
 .SectionArticles{
-    @include Nouvelle_section(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
     &__items{
         &-img{
             justify-self: end;
@@ -231,6 +231,43 @@ input[type=button] {
     }
 }
 
+/* page tourage */
+
+.SectionFaitsDivers{
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    background-color: $LightYellow;
+
+    &__LeftPart{
+        order: 1;
+        &-img{
+            width: 100%;
+            img{
+                @extend .ShadowBox
+            }
+        }
+    }
+    
+    &__RightPart{
+        order: 2;
+        align-self: center;
+        margin-left: 40px;
+        h2{
+            @extend .Titre_h2;
+        }
+        h4{
+            @extend .Titre_h4;
+        }
+        h5{
+            @extend .Titre_h5;
+        }
+        p{
+            @extend .Paragraphe;
+        }
+        .FaitsDivers__button{
+            margin-top: 40px;
+        }
+    }
+}
 
 /*footer*/
 .footer{
@@ -253,24 +290,117 @@ input[type=button] {
 }
 
 
+/*page tournage */
 
+/*Faits divers*/
+.SectionFaitsDivers{
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    background-color: $LightYellow;
 
+    &__LeftPart{
+        &-img{
+            width: 100%;
+            img{
+                @extend .ShadowBox
+            }
+        }
+    }
+    
+    &__RightPart{
+        align-self: center;
+        margin-left: 40px;
+        h2{
+            @extend .Titre_h2;
+        }
+        h4{
+            @extend .Titre_h4;
+        }
+        h5{
+            @extend .Titre_h5;
+        }
+        p{
+            @extend .Paragraphe;
+        }
+        .FaitsDivers__button{
+            margin-top: 40px;
+        }
+    }
+}
 
+/* Gallerie  */
 
-
-
-
-
-
-
-/* Largeur de l'écran >=1280px  */
-
-@media screen and (min-width: 1281px) {
-    body{
-        background-color: #f30000fd;
+.SectionGallerie{
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    @extend .BorderSection;
+    text-align: -webkit-center;
+    &__items{
+        &-img{
+            width: 100%;
+            img{
+                @extend .ShadowBox;
+            }
+        }
     }
 
 }
+
+/*  Accordéon  */
+
+.SectionAccordeon{
+    @include container(20px, 8%, 20px, 8%, 40px, 40px, 40px, 40px);
+    text-align: -webkit-center;
+
+    h2{
+        @extend .Titre_h2;
+        text-align: center;
+    }
+    &__p{
+        width: 60%;
+
+
+        p{
+            @extend .Paragraphe;
+            text-align: center;
+        }
+    }
+
+
+#accordion-collapse{
+    &-heading-1,
+    &-heading-2,
+    &-heading-3,
+    &-heading-4,
+    &-heading-5,
+    &-heading-6 {
+        margin:20px 0 0 0;
+        button{
+            background-color: $Maize;
+            border: none;
+        }
+        span{
+             font-size: 18px;
+        color: $Black;
+        border: none;
+        }
+    }
+    &-body-1,
+    &-body-2,
+    &-body-3,
+    &-body-4,
+    &-body-5,
+    &-body-6{
+        background-color: $Priwinkle;
+        margin-bottom: 10px;
+    }
+   
+}
+
+}
+
+
+
+
+
 /* 1280px > Largeur de l'écran >=768px  */
 @media screen and (max-width: 1280px) and (min-width: 769px) {
 
@@ -294,4 +424,39 @@ input[type=button] {
     body{
         background-color: rgb(255, 0, 255);
     }
+}
+
+
+/* Responsive Page tournage*/
+
+@media (max-width: 1024px) {
+    /* page tourage */
+
+.SectionFaitsDivers{
+    @include container(20px, 20px, 20px, 20px, 10px, 10px, 10px, 10px);
+
+
+    &__LeftPart{
+        order: 2;
+        &-img{
+            width: 100%;
+            text-align: -webkit-center;
+            margin: 40px 0;
+        }
+    }
+    
+    &__RightPart{
+        order: 1;
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        place-self: center;
+        h2{
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 10px 0;
+        }
+    }
+}
 }
