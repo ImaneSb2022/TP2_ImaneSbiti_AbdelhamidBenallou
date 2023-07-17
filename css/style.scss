@@ -406,9 +406,6 @@ input[type=button] {
 /* 1280px > Largeur de l'écran >=768px  */
 @media (max-width: 1279px) and (min-width: 769px) {
 
-        body{
-            background-color: #9a2eff;
-        }
         .SectionExtraits{
             @include container(20px, 20px, 0, 20px, 20px, 20px, 0, 20px);
             h2{
@@ -449,9 +446,6 @@ input[type=button] {
 
 /* 768px > Largeur de l'écran  */
 @media (max-width: 768px) and (min-width: 500px){
-        body{
-            background-color: rgb(255, 191, 255);
-        }
 
     /*Présentation de l'oeuvre*/
 
@@ -542,9 +536,6 @@ input[type=button] {
         }
 
 }
-
-
-
 
 @media (max-width: 600px) and (min-width: 500px){
     

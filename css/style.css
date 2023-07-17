@@ -323,9 +323,6 @@ input[type=button]:hover {
 }
 /* 1280px > Largeur de l'écran >=768px  */
 @media (max-width: 1279px) and (min-width: 769px) {
-  body {
-    background-color: #9a2eff;
-  }
   .SectionExtraits {
     margin-top: 20px;
     margin-right: 20px;
@@ -371,9 +368,6 @@ input[type=button]:hover {
 }
 /* 768px > Largeur de l'écran  */
 @media (max-width: 768px) and (min-width: 500px) {
-  body {
-    background-color: rgb(255, 191, 255);
-  }
   /*Présentation de l'oeuvre*/
   .SectionPresentation {
     margin-top: 20px;
