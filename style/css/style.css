@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*Couleur : */
+/*@use 'mixins';
+@use 'colors';*/
 body {
   font-family: "Lato", sans-serif;
 }
@@ -71,7 +72,6 @@ input[type=button]:hover {
   font-size: 18px;
 }
 
-/*Mixins*/
 /*Header*/
 .header__nav {
   background-color: #FF674D;
@@ -508,4 +508,4 @@ input[type=button]:hover {
   .SectionFaitsDivers__RightPart p {
     margin: 10px 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

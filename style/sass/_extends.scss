@@ -1,0 +1,36 @@
+
+/*Extends*/
+.ShadowBox{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.BorderSection{
+    border-color: $Maize;
+    border-style: solid;
+    border-width: 4px 0;
+}
+.Titre{
+    font-weight: bold;
+    color: $Tomato;
+}
+.Titre_h2{
+    @extend .Titre;
+    margin: 0 0 40px 0;
+    font-size: 48px;
+}
+.Titre_h4{
+    @extend .Titre;
+    margin: 20px 0 0 0;
+    font-size: 24px;
+}
+.Titre_h5{
+    @extend .Titre;
+    color: $Black;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+.Paragraphe{
+    color: $Glaucous;
+    margin: 0 0 40px 0;
+    font-size: 18px;
+}

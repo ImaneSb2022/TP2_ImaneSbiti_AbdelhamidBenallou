@@ -1,0 +1,30 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Global */
+.cache{
+    visibility:hidden;
+}
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $Tomato;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=button] {
+    background-color: $Glaucous;
+    border: none;
+    font-weight: bold;
+    color: $Maize;
+    padding: 10px 60px;
+    text-decoration: none;
+    margin: 4px 2px;
+    &:hover{
+        background-color: $Glaucous;
+        border: 1px $Black solid;
+    }
+
+}

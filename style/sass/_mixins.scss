@@ -1,0 +1,12 @@
+@mixin container($mt, $mr, $mb, $ml, $pt, $pr, $pb, $pl){
+
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
